@@ -21,3 +21,25 @@ body,
 .bgButton {
   background-image: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
 }
+
+/* hide scrollbar but allow scrolling */
+.scroolbar {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+
+
+.tableScroll::-webkit-scrollbar {
+  height: 8px;
+  width: 1px;
+  margin-top: 20px;
+  opacity: 40%;
+}
+
+.tableScroll::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #dee2e6;
+  opacity: 20%;
+}

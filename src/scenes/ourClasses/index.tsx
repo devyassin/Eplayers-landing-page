@@ -11,35 +11,35 @@ import Class from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "Morocco vs Portugal",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "An unstoppable run to Himalayan heights to get ahead of Diogo Costa and Ruben Dias, followed by an unstoppable header. In the 42nd minute on Saturday, Youssef En-Nesyri scored the historic goal that enabled Morocco to eliminate Portugal (1-0) and qualify for the semi-finals of the 2022 World Cup.",
     image: image1,
   },
   {
-    name: "Yoga Classes",
+    name: "Morocco vs Spain",
+    description:
+      "keeper Bono saved two, while Abdelhamid Sabiri, Hakim Ziyech and Achraf Hakimi scored their spot-kicks to send Spain out and Morocco into the next round, where Portugal or Switzerland await, ",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    name: "Morocco vs Belgium",
     image: image3,
   },
   {
-    name: "Adventure Classes",
+    name: "Morocco vs Brazil",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Sofiane Boufal and Abdelhamid Sabiri scored to give Morocco a 2-1 friendly win over Brazil in Tangier on Saturday, earning their first victory against the five-time world champions.",
     image: image4,
   },
   {
-    name: "Fitness Classes",
+    name: "Afcon u23",
     image: image5,
   },
   {
-    name: "Training Classes",
+    name: "Morocco vs Spain",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Great performance by azzedine Ounahi. The number eight did not stop running and stopping any dangerous action on the part of the Spanish team.",
     image: image6,
   },
 ];
@@ -50,10 +50,8 @@ type Props = {
 
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-color-blueDark py-40">
-      <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
-      >
+    <section id="morocco" className="w-full bg-color-blueDark py-40">
+      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Morocco)}>
         <motion.div
           className="mx-auto w-5/6"
           initial="hidden"
@@ -75,7 +73,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+        <div className="tableScroll mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class

@@ -20,7 +20,7 @@ const NavigationButtons = ({ selectedPage, setSelectedPage }: Props) => {
         setSelectedPage={setSelectedPage}
       />
       <Link
-        page="Our Classes"
+        page="Morocco"
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />

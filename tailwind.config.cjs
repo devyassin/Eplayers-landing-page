@@ -9,13 +9,22 @@ module.exports = {
         "gray-100": "#DFCCCC",
         "gray-500": "#F2E3D5",
         "color-global": "#1B0D01",
-        "color-blueDark":"#0F1624",
-        "color-card":"#1B0D01",
+        "color-blueDark": "#0F1624",
+        "color-card": "#1B0D01",
         "primary-100": "#012E40",
         "primary-300": "#FFC132",
         "primary-500": "#FEC576",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
+        color1: "#012E40",
+        color2: "#024959",
+        color3: "#026773",
+        color4: "#3CA6A6",
+        color5: "#F2E3D5",
+        color6: "#1B0D01",
+        color7: "#00040F",
+        color8: "#FEC576",
+        color9: "#E30808",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
@@ -25,6 +34,7 @@ module.exports = {
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        Grotesk: ["Space Grotesk", "sans-serif"],
       },
       content: {
         evolvetext: "url('./assets/EvolveText.png')",

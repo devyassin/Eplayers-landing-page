@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -29,8 +31,6 @@ body,
   overflow-y: scroll;
 }
 
-
-
 .tableScroll::-webkit-scrollbar {
   height: 8px;
   width: 1px;
@@ -42,4 +42,22 @@ body,
   border-radius: 25px;
   background-color: #dee2e6;
   opacity: 20%;
+}
+
+.title-color {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gros {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.stroke-bl {
+  stroke-width: 2px;
+  stroke: #fff;
+  fill: #3ca6a6;
 }

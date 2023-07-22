@@ -274,6 +274,12 @@ const BarcaChampionsLeague = {
 
 const BarcaTeam = {
   name: "fc barcelone",
+  info: {
+    stadium: "Spotify Camp Nou",
+    averageAge: "25.2",
+    marketValue: "€777.00m",
+    contry :"Spain"
+  },
   logo: "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/FC%20Barcalona%2FLOGO%2F559px-Logo_FC_Barcelona.svg.png?alt=media&token=f9982b94-09de-49f3-b482-901104dffdb3",
   description: desc,
   players: [

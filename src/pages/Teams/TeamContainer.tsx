@@ -1,6 +1,13 @@
 import TitleSection from "@/shared/TitleSection";
 import React from "react";
 import Team from "../../data/Team";
+import Icon1 from "../../assets/Icons/user.png";
+import Icon2 from "../../assets/Icons/place.png";
+import Icon3 from "../../assets/Icons/stadium.png";
+import Icon4 from "../../assets/Icons/value.png";
+import StateTitle from "@/shared/StateTitle";
+import { icons } from "react-icons/lib";
+import CardPlayer from "@/shared/CardPlayer";
 
 type Props = {
   team: Team;
@@ -80,17 +87,69 @@ const TeamContainer = ({ team }: Props) => {
       {/* Tshirts */}
       <div className="my-24 flex w-full flex-col items-center ">
         <TitleSection title="T-shirts" />
-        <div className="mx-10 grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 ">
+        <div className="mx-10 grid w-full grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-2 md:grid-cols-3 ">
           <div className="flex justify-center">
             <img className="w-[12rem]" src={team.Tshirts.Tshirt1} />
           </div>
           <div className="flex justify-center">
             <img className="w-[12rem]" src={team.Tshirts.Tshirt2} />
           </div>
-          <div className="flex col-span-1 sm:col-span-2 md:col-span-1 items-center justify-center">
+          <div className="col-span-1 flex items-center justify-center sm:col-span-2 md:col-span-1">
             {" "}
             <img className="w-[12rem]" src={team.Tshirts.Tshirt3} />
           </div>
+        </div>
+      </div>
+
+      {/* Stats */}
+      <div className="my-24 flex w-full flex-col items-center justify-center ">
+        <TitleSection title="Stats" />
+        <div className="mt-10 grid w-full grid-cols-1 items-center  gap-y-8 px-24 md:grid-cols-2 md:gap-x-40">
+          <div className="md:pr-20">
+            <StateTitle
+              image={Icon1}
+              title="Average age "
+              info={team.info.averageAge}
+              position="justify-start"
+            />
+          </div>
+          <div className="md:pr-24">
+            <StateTitle
+              image={Icon2}
+              title="Contry "
+              info={team.info.contry}
+              position="justify-end"
+            />
+          </div>
+          <StateTitle
+            image={Icon3}
+            title="Stadium "
+            info={team.info.stadium}
+            position="justify-start"
+          />
+          <StateTitle
+            image={Icon4}
+            title="Market Value "
+            info={team.info.marketValue}
+            position="justify-end"
+          />
+        </div>
+      </div>
+
+      {/* Players */}
+      <div className="my-24 flex w-full flex-col items-center px-24">
+        <TitleSection title="Players" />
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+          {team.players.map((player, index) => {
+            return (
+              <CardPlayer
+                key={index}
+                name={player.name}
+                role={player.role}
+                picture={player.picture}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

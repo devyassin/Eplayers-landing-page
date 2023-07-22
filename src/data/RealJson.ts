@@ -206,7 +206,7 @@ const Valverde = {
 const ViniBio =
   "Vinícius Junior's football career began in the year 2006, when his father took him to the branch offices of Flamengo, in the neighborhood of Mutuá, in São Gonçalo where he lived. His club document described him as a left-back.";
 const Vini = {
-  name: "Vinicius Paixao de Oliveira Junior",
+  name: "Vinicius",
   role: "forward",
   biography: ViniBio,
   picture:
@@ -251,6 +251,12 @@ const RealChampionsLeague = {
 
 const RealTeam = {
   name: "Real Madrid",
+  info: {
+    stadium: "Santiago Bernbéu",
+    averageAge: "26.4",
+    marketValue: "€985.00m",
+    contry: "Spain",
+  },
   logo: "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FLogo%2Freal-logo.png?alt=media&token=666f2f50-86b7-4d5a-b8a7-94029116d8e4",
   description: desc,
   players: [
@@ -270,11 +276,11 @@ const RealTeam = {
 
   Tshirts: {
     Tshirt1:
-      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt1.webp?alt=media&token=793d76e5-6f09-41be-a60a-3f3516ef2407",
+      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt1.png?alt=media&token=bb2d4bf8-a34a-41d7-8bba-d4faae720eff",
     Tshirt2:
-      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt2.webp?alt=media&token=883bf097-0edd-4eb6-b307-d97afeb23fd2",
+      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt2.png?alt=media&token=ad0faf86-ad54-4dbe-8c80-42bb3c887592",
     Tshirt3:
-      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt3.webp?alt=media&token=33627516-5114-446b-9f6b-df4ec0c863fa",
+      "https://firebasestorage.googleapis.com/v0/b/adapter-dbd21.appspot.com/o/Real%20Madrid%2FTshirts%2FTshirt3.png?alt=media&token=326d5bb4-1ceb-4617-b95a-b038fa140da0",
   },
 };
 

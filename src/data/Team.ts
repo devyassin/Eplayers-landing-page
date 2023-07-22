@@ -15,6 +15,12 @@ interface Player {
 
 export default interface Team {
   name: string;
+  info: {
+    stadium: string;
+    averageAge: string;
+    marketValue: string;
+    contry: string;
+  };
   logo: string;
   description: string;
   players: Player[];

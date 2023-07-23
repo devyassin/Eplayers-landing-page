@@ -24,7 +24,7 @@ const CardPlayer = ({ name, role, picture }: Props) => {
       {/* Role */}
       <p className="card-role pb-4">{role}</p>
       {/* Picture */}
-      <img src={picture} alt={name} />
+      <img src={picture} alt={name} loading="lazy" />
     </Link>
   );
 };

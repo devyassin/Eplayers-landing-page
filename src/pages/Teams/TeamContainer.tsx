@@ -1,12 +1,13 @@
 import TitleSection from "@/shared/TitleSection";
-import React from "react";
+
 import Team from "../../data/Team";
 import Icon1 from "../../assets/Icons/user.png";
 import Icon2 from "../../assets/Icons/place.png";
 import Icon3 from "../../assets/Icons/stadium.png";
 import Icon4 from "../../assets/Icons/value.png";
 import StateTitle from "@/shared/StateTitle";
-import { icons } from "react-icons/lib";
+
+import { useEffect } from "react";
 import CardPlayer from "@/shared/CardPlayer";
 
 type Props = {
@@ -14,6 +15,10 @@ type Props = {
 };
 
 const TeamContainer = ({ team }: Props) => {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const [firstName, LastName] = team.name.split(" ");
   return (
     <div className="mt-10 flex w-full  flex-col items-center ">
@@ -35,6 +40,7 @@ const TeamContainer = ({ team }: Props) => {
             <img
               className="relative w-[6rem]"
               src={team.Trophys.ChampionsLeague.picture}
+              loading="lazy"
             />
             <div className="absolute flex h-8 w-8 translate-x-8 translate-y-32 items-center justify-center rounded-full border-2 bg-color4 font-bold">
               {team.Trophys.ChampionsLeague.number}
@@ -45,6 +51,7 @@ const TeamContainer = ({ team }: Props) => {
             <img
               className="relative w-[11rem]"
               src={team.Trophys.UEAFcup.picture}
+              loading="lazy"
             />
             <div className="absolute flex h-8 w-8 translate-x-8 translate-y-32 items-center justify-center rounded-full border-2 bg-color4 font-bold">
               {team.Trophys.UEAFcup.number}
@@ -55,6 +62,7 @@ const TeamContainer = ({ team }: Props) => {
             <img
               className="relative w-[11rem] "
               src={team.Trophys.EuropienLeague.picture}
+              loading="lazy"
             />
             <div className="absolute flex h-8 w-8 translate-x-8 translate-y-32 items-center justify-center rounded-full border-2 bg-color4 font-bold">
               {team.Trophys.EuropienLeague.number}
@@ -65,6 +73,7 @@ const TeamContainer = ({ team }: Props) => {
             <img
               className="relative w-[11rem] "
               src={team.Trophys.SpanishCup.picture}
+              loading="lazy"
             />
             <div className="absolute flex h-8 w-8 translate-x-8 translate-y-32 items-center justify-center rounded-full border-2 bg-color4 font-bold">
               {team.Trophys.SpanishCup.number}
@@ -89,14 +98,26 @@ const TeamContainer = ({ team }: Props) => {
         <TitleSection title="T-shirts" />
         <div className="mx-10 grid w-full grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-2 md:grid-cols-3 ">
           <div className="flex justify-center">
-            <img className="w-[12rem]" src={team.Tshirts.Tshirt1} />
+            <img
+              className="w-[12rem]"
+              src={team.Tshirts.Tshirt1}
+              loading="lazy"
+            />
           </div>
           <div className="flex justify-center">
-            <img className="w-[12rem]" src={team.Tshirts.Tshirt2} />
+            <img
+              className="w-[12rem]"
+              src={team.Tshirts.Tshirt2}
+              loading="lazy"
+            />
           </div>
           <div className="col-span-1 flex items-center justify-center sm:col-span-2 md:col-span-1">
             {" "}
-            <img className="w-[12rem]" src={team.Tshirts.Tshirt3} />
+            <img
+              className="w-[12rem]"
+              src={team.Tshirts.Tshirt3}
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Logo from "@/assets/logo.png";
 import NavigationButtons from "@/shared/NavigationButtons";
 import { SelectedPage } from "@/shared/Types";
 import ActionButton from "@/shared/ActionButton";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 type Props = {
   isTopOfPage: boolean;
@@ -18,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     <>
       <div
         className={` fixed top-0 left-0 z-10 flex  w-full items-center justify-between py-6 ${
-          isTopOfPage ? "" : "bg-primary-100 DropShadow"
+          isTopOfPage ? "" : "DropShadow bg-primary-100"
         }`}
       >
         <div className=" mx-auto flex w-5/6 justify-between ">
@@ -32,9 +33,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
           </div>
           <div className="hidden items-center justify-between gap-8 md:flex">
-            <h1>Sign in</h1>
+            <AnchorLink href="#contactus">
+              {" "}
+              <h1>Sign in</h1>
+            </AnchorLink>
             <ActionButton setSelectedPage={setSelectedPage}>
-              Become a Member
+              Dashboard
             </ActionButton>
           </div>
           {/* Mobile Version */}

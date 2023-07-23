@@ -15,6 +15,7 @@ const LandingPage = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);

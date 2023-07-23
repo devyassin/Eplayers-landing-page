@@ -4,15 +4,15 @@ type Props = {
   image: string;
   title: string;
   info: string;
-  position:string;
+  position: string;
 };
 
-const StateTitle = ({ image, title, info,position }: Props) => {
+const StateTitle = ({ image, title, info, position }: Props) => {
   return (
     <div
       className={`gros flex items-center justify-center space-x-2 md:${position}`}
     >
-      <img className="h-[30px] w-[30px]" src={image} />
+      <img className="h-[30px] w-[30px]" src={image} loading="lazy" />
       <h3 className="text-[14px] font-bold text-primary-500 md:text-[20px]">
         {title} :
       </h3>

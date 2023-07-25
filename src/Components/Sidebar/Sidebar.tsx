@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import barcaLogo from "@/assets/barcaLogo.png";
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
+import CopyRight from "@/shared/CopyRight";
 
 type Props = {};
 
@@ -34,6 +35,9 @@ const Sidebar = (props: Props) => {
             name="FC Barcelone"
             iconUrl={barcaLogo}
           />
+        </div>
+        <div className="bottom-0 hidden  pb-4 text-[12px] sm:absolute sm:flex">
+          <CopyRight />
         </div>
       </div>
       <Outlet />

@@ -7,6 +7,7 @@ import TitleSection from "@/shared/TitleSection";
 import StateTitle from "@/shared/StateTitle";
 import { useEffect } from "react";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
+import CopyRight from "@/shared/CopyRight";
 
 const PlayerDetails = () => {
   useEffect(() => {
@@ -80,6 +81,7 @@ const PlayerDetails = () => {
           </div>
         </div>
       </div>
+      <div className="text-sm pb-4 text-center sm:hidden"><CopyRight /></div>
     </div>
   );
 };

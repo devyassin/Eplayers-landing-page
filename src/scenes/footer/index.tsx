@@ -1,4 +1,5 @@
 import Logo from "@/assets/logo.png";
+import CopyRight from "@/shared/CopyRight";
 
 const Footer = () => {
   return (
@@ -12,17 +13,7 @@ const Footer = () => {
             Don't miss out on the opportunity to stay informed and be part of
             our passionate community.
           </p>
-          <p>
-            © Copyright 2023 By{" "}
-            <a
-              className="text-primary-500"
-              href="https://www.linkedin.com/in/yassine-lamouadden/"
-              target="_blank"
-            >
-              Yassine Lamouadden
-            </a>
-            . All rights reserved.
-          </p>
+          <CopyRight />
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="mb-8 font-bold">Links</h4>

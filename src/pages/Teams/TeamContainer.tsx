@@ -9,6 +9,7 @@ import StateTitle from "@/shared/StateTitle";
 
 import { useEffect } from "react";
 import CardPlayer from "@/shared/CardPlayer";
+import CopyRight from "@/shared/CopyRight";
 
 type Props = {
   team: Team;
@@ -172,6 +173,9 @@ const TeamContainer = ({ team }: Props) => {
             );
           })}
         </div>
+      </div>
+      <div className="pb-4 text-sm sm:hidden">
+        <CopyRight />
       </div>
     </div>
   );
